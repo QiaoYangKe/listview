@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hngymt.almes.pda.client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CompleteUpdateFormActivity"
+            android:label="产品详情修改"/>
+        <activity
+            android:name=".MachineTaskDetailActivity"
+            android:label="机列任务详情" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MillingActivity"
+            android:label="@string/btn_milling" />
+        <activity
+            android:name=".CompleteActivity"
+            android:label="@string/complete" />
+        <activity
+            android:name=".ProductActivity"
+            android:label="@string/product" />
+        <activity
+            android:name=".MachineTaskActivity"
+            android:label="@string/btn_machine_task" />
+        <activity
+            android:name=".SawingActivity"
+            android:label="@string/btn_sawing" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

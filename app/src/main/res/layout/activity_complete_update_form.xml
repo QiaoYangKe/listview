@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteUpdateFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/product_no" />
+
+            <EditText
+                android:id="@+id/et_product_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="162sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/thick" />
+
+            <EditText
+                android:id="@+id/et_thick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="162sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/width" />
+
+            <EditText
+                android:id="@+id/et_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="162sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/length" />
+
+            <EditText
+                android:id="@+id/et_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="290sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pipe_type" />
+
+            <Spinner
+                android:id="@+id/sp_pipe_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="292sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pipe_weight" />
+
+            <EditText
+                android:id="@+id/et_pipe_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="98sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gross_weight" />
+
+            <EditText
+                android:id="@+id/et_gross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="98sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tare_weight" />
+
+            <EditText
+                android:id="@+id/et_tare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="98sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/net_weight" />
+
+            <EditText
+                android:id="@+id/et_net"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="98sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/film_weight" />
+
+            <EditText
+                android:id="@+id/et_film_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="292sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/slices" />
+
+            <EditText
+                android:id="@+id/et_splice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="296sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/product_type" />
+
+            <Spinner
+                android:id="@+id/sp_p_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView210"
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/complete_note" />
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plate_after_processing" />
+
+            <EditText
+                android:id="@+id/et_plant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/surface_after_processing" />
+
+            <EditText
+                android:id="@+id/et_surface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="145sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/self_test_results" />
+
+            <EditText
+                android:id="@+id/et_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
